@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.first {
+  color: white;
+  background: #EDE7F6;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  min-height: 100vh;
+
+  .container_section {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background: #424242;
+    border-radius: 10px;
+    width: 90vh;
+    align-self: center;
+
+    .title {
+      margin: 1em;
+      font-size: 2em;
+      color: #FF5722;
+    }
+
+    .information {
+      text-align: justify;
+      font-size: 1em;
+      margin: 0 2em 2em 2em;
+    }
+
+    .form_section {
+      display: flex;
+      flex-direction: row;
+      align-content: flex-start;
+      margin: 0 2em 2em 2em;
+
+      form {
+        width: 70%;
+
+        .label_input {
+          margin: 1em;
+
+          input[type=text] {
+            padding: 5px 10px;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            outline: none;
+            border-radius: 5px;
+            color: #6d7477;
+            &:focus {
+              border: 1px solid #6d7477;
+              color: black;
+            }
+          }
+        }
+
+        .buttons {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          margin-right: 2.5em;
+
+          .button_one, .button_two {
+            width: 6em;
+            height: 2em;
+            font-size: 1em;
+            background: #0d6efd;
+            border: 1px solid #0d6efd;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 800;
+            cursor: pointer;
+          }
+          .button_one {
+            &:hover {
+              background-color: #6f42c1 ;
+              border: 1px solid #6f42c1 ;
+            }
+          }
+          .button_two {
+            opacity: 0.8;
+            margin-left: 0.5em;
+            &:hover {
+              background-color: #6d7477;
+              border: 1px solid #6d7477;
+            }
+          }
+        }
+      }
+
+      .text {
+        margin-top: 1em;
+        align-self: flex-start;
+        .description {
+          font-size: 0.85em;
+        }
+      }
+    }
+
+
+
+  }
+}
